@@ -1,0 +1,60 @@
+$red: #ca1f3d;
+$yellow: #ffbe00;
+$white: #ffffff;
+$black: #25182e;
+
+#tarefa {
+  background-color: transparent;
+  border: 2px solid $red;
+  border-radius: 15px;
+
+  height: auto;
+  // margin: 30px;
+  padding: 10px;
+  overflow: hidden;
+  animation: ascencao 1s;
+
+  h1 {
+    display: block;
+    color: $black;
+    font-weight: bold;
+    margin: 10px 0px;
+  }
+
+  p {
+    color: $black;
+  }
+
+  #apagar {
+    height: 40px;
+    width: 25%;
+    border-radius: 5px;
+    background-color: $red;
+    border: none;
+    color: $white;
+    margin: 20px 15px;
+  }
+
+  #editar {
+    height: 40px;
+    width: 25%;
+    border-radius: 5px;
+    background-color: $white;
+    border: 2px solid $red;
+    color: $black;
+    margin: 20px 10px;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes ascencao {
+  0% {
+    transform: translateY(100px);
+    color: transparent;
+  }
+  100% {
+  }
+}

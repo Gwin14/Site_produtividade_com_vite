@@ -1,0 +1,112 @@
+$red: #ca1f3d;
+$yellow: #ffbe00;
+$white: #ffffff;
+$black: #25182e;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+}
+
+#sidebar {
+  width: 20%;
+  min-width: 250px;
+  height: 100vh;
+
+  border-right: 2px solid $black;
+
+  h1 {
+    width: 100%;
+    color: $black;
+    text-align: justify;
+    padding: 60px 20%;
+    font-size: 2rem;
+  }
+
+  .bt-sidebar {
+    width: 100%;
+    height: 100px;
+
+    background-color: transparent;
+
+    border: none;
+
+    margin: 0px;
+
+    text-align: justify;
+    padding-left: 20%;
+    font-size: 150%;
+  }
+
+  .bt-sidebar:hover {
+    background-color: $yellow;
+  }
+}
+
+#main {
+  max-height: 100vh;
+  overflow: scroll;
+  width: 80%;
+}
+
+#toggleSidebar {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  display: none;
+  border: none;
+}
+
+@media (max-width: 800px) {
+  #sidebar {
+    position: fixed;
+    width: 60%;
+    display: none;
+    z-index: 1;
+
+    animation: direita 1s;
+  }
+
+  #toggleSidebar {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+    display: block;
+    margin: 20px;
+    transition-duration: 0.5s;
+  }
+
+  #toggleSidebar:hover {
+    transform: scale(1.5);
+  }
+
+  #toggleSidebar:active {
+    transform: scale(0);
+  }
+
+  @keyframes direita {
+    0% {
+      transform: translateX(-700px);
+      color: transparent;
+    }
+    100% {
+    }
+  }
+}
