@@ -39,3 +39,13 @@ $black: #25182e;
   100% {
   }
 }
+
+@media (max-width: 460px) {
+  #welcome-title {
+    font-size: 2rem;
+  }
+
+  #welcome-subtitle {
+    font-size: 1rem;
+  }
+}

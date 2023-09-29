@@ -91,6 +91,8 @@ main {
     display: block;
     margin: 20px;
     transition-duration: 0.5s;
+    border: 1px solid $yellow;
+    border-radius: 50%;
   }
 
   #toggleSidebar:hover {
@@ -108,5 +110,18 @@ main {
     }
     100% {
     }
+  }
+}
+
+@media (max-width: 800px) {
+  #main {
+    width: 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  #toggleSidebar {
+    transform: translateY(55px);
+    background-color: $yellow;
   }
 }

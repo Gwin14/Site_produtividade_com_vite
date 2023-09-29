@@ -45,3 +45,11 @@ $black: #25182e;
     width: 100%;
   }
 }
+
+@media (max-width: 460px) {
+  svg,
+  a {
+    width: 30px;
+    margin: 0px;
+  }
+}

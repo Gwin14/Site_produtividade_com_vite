@@ -23,14 +23,12 @@ function App() {
   return (
     <>
       <main>
-        
-        <img
-          src="../src/images/menu-aberto.png"
+        <div
           id="toggleSidebar"
           onClick={() => {
             toggle();
           }}
-        ></img>
+        ></div>
         <section id="sidebar" className="cor">
           <h1 id="categorias">Categorias</h1>
           <button

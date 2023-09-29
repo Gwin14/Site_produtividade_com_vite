@@ -94,3 +94,20 @@ $black: #25182e;
   100% {
   }
 }
+
+@media (max-width: 800px) {
+  #checklistTitle {
+    font-size: 2rem;
+  }
+
+  // #adicionar,
+  // #limpar {
+  //   font-size: 0.5rem;
+  // }
+}
+
+@media (max-width: 460px) {
+  #formChecklist {
+    width: 90%;
+  }
+}

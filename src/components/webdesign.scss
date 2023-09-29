@@ -17,6 +17,7 @@ $black: #25182e;
     span {
       text-decoration: none;
       color: $red;
+      margin: 0px 5px;
     }
   }
 
@@ -86,5 +87,17 @@ $black: #25182e;
     color: transparent;
   }
   100% {
+  }
+}
+
+@media (max-width: 460px) {
+  #parteDeAleatorizar span,
+  #parteDeAleatorizar h1 {
+    font-size: 1.5rem;
+  }
+
+  #parteDeAleatorizar {
+    height: 60%;
+    width: 90%;
   }
 }
